@@ -1,46 +1,46 @@
 body{
-    font-family:sans-serif;
-    background-color:#3EB3EF ;
-    color:whitesmoke;
-     margin:0;
-     padding:0;
-     display:border-box;
-     background-image:linear-gradient(to top right,#1b65aa,#7ec9e4)
+     font-family:sans-serif;
+     color:whitesmoke;
+     background-image:linear-gradient(to top right,#3e19a5,#7ec9e4);
+     background-repeat:no-repeat;
+     background-size: auto;
 }
 /* ********************container******************* */
-.container{
-    margin:0 100px;
-    height:600px;
+.container-fluid{
+    padding:1% 15% 7% 15%;
+
 }
 
 /********************** navbar *****************/
 
 .navbar{
-    padding-left:0;
-    margin-top:10px;
+        padding: 10px;
+         
 }
 .navbar-brand{
     padding-left:0;
     font-size:2.5rem;
 }
 .navbar-nav{
-    float:right;
+   float: right;
 }
 .nav-item{
     font-size:1.7rem;
-    padding-left:5px;
+    padding:0 18px;
+    
 }
-
 /* ****************************testimonial******************* */
-.testimonial{
-    position:relative;
-    top:60px;
-    bottom:30px;
+.row{
+    margin:120px 0 30px 0;
+}
+.row h1{
+    margin-top:45px;
 }
 .main-heading{
     font-family: "Roboto";
-    line-height: 3rem;
-    padding:50px 50px 0 0;
+    line-height: 2.5rem;
+    padding-left: 0;
+    width:330px;
 }
 #heading-btn{
     margin-left:3px;
@@ -50,25 +50,43 @@ body{
     color:#F4F9FB;
 }
 .btn{
-    margin:12px 10px;
+    margin:12px 0;
 }
 #col{
-    padding-left:100px ;
+    padding-left:0 ;
 }
 .form-signin{
-    padding:25px 90px 50px 60px;
+    padding:10px 30px 75px 30px;
     background-color:white;
-    width:430px;
-    height:380px;
+    width:300px;
+    height:340px;
+    margin-left: 120px;
+    border-radius:2px;
 }
 .sign-title{
     color:#BDBEBE;
     padding-bottom:8px;
+    text-align: center;
 }
 .form-control{
-    margin:10px;
+    margin:10px 0;
 }
 p{
     color:#BDBEBE;
     margin-left:4px;
 }
+@media (max-width: 960px) {
+    .navbar-brand{
+     display: inline-flex;
+    }
+    #website{
+      display: block;
+    }
+    .main-heading{
+     text-align: center;
+    }
+    .form-signin{
+        margin-left: 0;
+        margin-top: 30px;;
+    }
+  }
