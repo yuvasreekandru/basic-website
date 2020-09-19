@@ -31,7 +31,7 @@ body{
 }
 /* ****************************testimonial******************* */
 .row{
-    margin:120px 0 30px 0;
+    margin:100px 0 30px 0;
 }
 .row h1{
     margin-top:45px;
@@ -60,7 +60,7 @@ body{
     background-color:white;
     width:300px;
     height:340px;
-    margin-left: 120px;
+    margin-left: 100px;
     border-radius:2px;
 }
 .sign-title{
