@@ -1,92 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 body{
-     font-family:sans-serif;
-     color:whitesmoke;
-     background-image:linear-gradient(to top right,#3e19a5,#7ec9e4);
-     background-repeat:no-repeat;
-     background-size: auto;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    height:100vh;
+    background: linear-gradient(to top right, rgb(30, 30, 202),rgb(94, 185, 212))no-repeat;
+    background-size: cover;
 }
-/* ********************container******************* */
-.container-fluid{
-    padding:1% 15% 7% 15%;
-
-}
-
-/********************** navbar *****************/
-
+/********** navbar **********/
 .navbar{
-        padding: 10px;
-         
+    margin:0% 18%;
 }
-.navbar-brand{
-    padding-left:0;
-    font-size:2.5rem;
-}
-.navbar-nav{
-   float: right;
-}
-.nav-item{
-    font-size:1.7rem;
-    padding:0 18px;
-    
-}
-/* ****************************testimonial******************* */
+/*********** Main ************/
 .row{
-    margin:100px 0 30px 0;
+    margin:5% 15% 0;
 }
-.row h1{
-    margin-top:45px;
+.content{
+    margin:40px;
 }
-.main-heading{
-    font-family: "Roboto";
-    line-height: 2.5rem;
-    padding-left: 0;
-    width:330px;
+.content h1{
+    letter-spacing: 2px;
+    font-weight: 300;
 }
-#heading-btn{
-    margin-left:3px;
+.content button{
+    background-color: green;
+    color: white;
+    padding:4px 7px;
+    border: none;
+    border-radius: 5px;
+    width:50%;
+    transform: translateX(0px);
 }
-.para{
-    font-size:1.7rem;
-    color:#F4F9FB;
+.sign-form{
+    margin:2% 15%;
+    padding:20px;
+    border-radius: 2px;
+    background-color: white;
 }
-.btn{
-    margin:12px 0;
-}
-#col{
-    padding-left:0 ;
-}
-.form-signin{
-    padding:10px 30px 75px 30px;
-    background-color:white;
-    width:300px;
-    height:340px;
-    margin-left: 100px;
-    border-radius:2px;
-}
-.sign-title{
-    color:#BDBEBE;
-    padding-bottom:8px;
+.sign-form h4{
+    color:rgb(73, 72, 72);
     text-align: center;
 }
-.form-control{
-    margin:10px 0;
+form input{
+    width:90%;
+    margin:10px;
+    padding-top:4px;
+    padding-bottom: 4px;
+    outline-style: none;
 }
-p{
-    color:#BDBEBE;
-    margin-left:4px;
+form button{
+    width:90%;
+    background-color: #1D77F1;
+    color: white;
+    padding: 6px;
+    transform: translateX(10px);
+    border: none;
+    border-radius: 5px;
 }
-@media (max-width: 960px) {
+@media (max-width:1020px){
+    body{
+        height:auto;
+    }
+    .navbar{
+        text-align:center;
+        align-items: center;
+    }
     .navbar-brand{
-     display: inline-flex;
+        margin-left:30px;
+        text-align:center;
     }
-    #website{
-      display: block;
+    .navbar-toggler{
+       border:0;
+       width: fit-content;
+       transform: translateX(-20px) !important;
     }
-    .main-heading{
-     text-align: center;
+    .content{
+        text-align:center;
     }
-    .form-signin{
-        margin-left: 0;
-        margin-top: 30px;;
-    }
-  }
+}
